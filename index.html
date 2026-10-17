@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>조선 시대 인물 카드 뒤집기 (태조~효종)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <header>
+      <h1>🇰🇷 조선 인물 메모리 게임</h1>
+      <p class="subtitle">국왕·인물과 대표 업적을 연결해 보세요! (태조~효종)</p>
+    </header>
+
+    <div class="info-panel">
+      <div class="stat-box">시도 횟수: <span id="moves">0</span>회</div>
+      <div class="stat-box">찾은 짝: <span id="matches">0</span> / 8</div>
+      <button id="reset-btn">게임 다시 시작</button>
+    </div>
+
+    <main id="game-board" class="game-board"></main>
+
+    <div id="win-modal" class="modal hidden">
+      <div class="modal-content">
+        <h2>🎉 축하합니다!</h2>
+        <p id="win-message">모든 역사 인물과 업적을 완성했습니다!</p>
+        <button id="modal-reset-btn">다시 도전하기</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
